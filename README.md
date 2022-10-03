@@ -5,8 +5,7 @@ Docker compose file to setup a local [WHIP](https://www.ietf.org/archive/id/draf
 When started it will start the following containers:
 
 - Ingest Endpoint: [WHIP Endoint](https://www.npmjs.com/package/@eyevinn/whip-endpoint)
-- Origin SFU: [Symphony Media Bridge](https://github.com/finos/SymphonyMediaBridge)
-- Edge SFU: [Symphony Media Bridge](https://github.com/finos/SymphonyMediaBridge)
+- Origin and Edge SFUs: [Symphony Media Bridge](https://github.com/finos/SymphonyMediaBridge)
 - Egress Endpoint: [WHEP Endpoint](https://www.npmjs.com/package/@eyevinn/wrtc-egress)
 
 ## Usage
