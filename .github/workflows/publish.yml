@@ -11,12 +11,12 @@ jobs:
     permissions:
       contents: write
 
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Release
-      uses: ncipollo/release-action@v1
-      with:
-        artifacts: "docker-compose.yml"
-        token: ${{ github.token }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "docker-compose.yml"
+          token: ${{ github.token }}
     
