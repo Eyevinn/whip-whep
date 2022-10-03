@@ -1,4 +1,4 @@
-name: Create and attach artifact to release
+name: Release
 
 on:
   push:
