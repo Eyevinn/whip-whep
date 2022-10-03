@@ -1,8 +1,9 @@
 name: Create and attach artifact to release
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   attach_artifact:
