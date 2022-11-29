@@ -13,7 +13,7 @@ When started it will start the following containers:
 Start
 
 ```bash
-curl -SL https://github.com/Eyevinn/whip-whep/releases/download/v0.1.0/docker-compose.yml | docker-compose -f - up
+curl -SL https://github.com/Eyevinn/whip-whep/releases/download/v0.2.0/docker-compose.yml | docker-compose -f - up
 ```
 
 Once everything is up and running you will have a WHIP/WHEP endpoints available at:
