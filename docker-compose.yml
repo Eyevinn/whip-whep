@@ -30,6 +30,7 @@ services:
       - ORIGIN_SFU_URL=http://sfu:8280/conferences/
       - SFU_API_KEY=example
       - EDGE_LIST_CONFIG=/etc/edge-list-config.json
+      - HOSTNAME=${ORIGIN_HOST:-localhost}
     ports:
       - "8200:8200/tcp"
     extra_hosts:
