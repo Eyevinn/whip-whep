@@ -5,8 +5,6 @@ services:
     image: eyevinntechnology/wrtc-sfu:v0.4.0
     cap_add:
       - SYS_NICE
-    ulimits:
-      rtprio: 99
     environment:
       - HTTP_PORT=8280
       - UDP_PORT=13000
@@ -33,14 +31,10 @@ services:
       - HOSTNAME=${ORIGIN_HOST:-localhost}
     ports:
       - "8200:8200/tcp"
-    extra_hosts:
-      - egress:host-gateway
   sfu-edge:
     image: eyevinntechnology/wrtc-sfu:v0.4.0
     cap_add:
       - SYS_NICE
-    ulimits:
-      rtprio: 99
     environment:
       - HTTP_PORT=8380
       - UDP_PORT=12000
